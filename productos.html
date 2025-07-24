@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🛍️ Gestión de Productos</h1>
+    <form id="formProducto">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required />
+      <input type="number" id="precio" placeholder="Precio" required />
+      <input type="text" id="categoria" placeholder="Categoría" required />
+      <button type="submit">Guardar</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductos"></tbody>
+    </table>
+
+    <a href="index.html" class="volver">← Volver al menú</a>
+  </div>
+
+  <script src="js/productos.js"></script>
+</body>
+</html>
